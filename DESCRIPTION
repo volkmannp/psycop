@@ -1,0 +1,14 @@
+Package: psycop
+Type: Package
+Title: Analysis and Visualization for Systematic Behavioral and Cognitive Profiling
+Author: Paul Volkmann, Marius Stephan
+Version: 0.1.0
+Author: Who wrote it
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: This Package contains customized functions for analysis and visualiziation
+of behavioral data as a 'Platform for Systematic Semi-Automated Behavioral and Cognitive Profiling' (PsyCoP)
+Encoding: UTF-8
+LazyData: true
+Depends:  R (>= 3.5.0),
+          tidyverse,
+          dplyr
