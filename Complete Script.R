@@ -1,7 +1,7 @@
 # Dimension reduction and statistical analysis of PsyCoP data
 # Authour:      Marius Stephan
 # Created:      27.03.2020
-# Last edited:  13.01.2020
+# Last edited:  13.01.2021
 
 #####################################
 # Setup
@@ -18,11 +18,10 @@ library(energy)
 rm(list=ls())
 
 # Load user function library
-source("C:/Users/Marius/MNB QSync/Exchange/Marius/RStudio Projects/My Functions/graph.functions v24.R")
-source("C:/Users/Marius/MNB QSync/Exchange/Marius/RStudio Projects/My Functions/gen.functions.R")
+source("%LIBRARYPATH%/graph.functions v24.R")
 
 # Load data
-load("C:/Users/Marius/MNB QSync/Mausunit/Projekte/2018/Tcf4 resident intruder/Tcf 4 Data package Run 1/MetaCompound.RData")
+load("%WHEREEVERYOURFILEIS%/MetaCompound.RData")
 rm(data.ID,MetaBattery)
 
 ####################################
@@ -90,7 +89,7 @@ at$size.adj[at$annot_adj == "n.s."] <- 8
 at$size.adj[at$annot_adj == "p<0.1"] <- 7
 
 # Read Look-up table for y-labels
-lutPath <- "C:/Users/Marius/Documents/XBehavior/FlowR/FlowR_library/Label LUT.txt"
+lutPath <- "%LOOKUPTABLEPATH/Label LUT.txt"
 if(file.exists(lutPath)) lut <- as_tibble(read.delim(lutPath,stringsAsFactors=F))
 
 # Create plot grouping table
@@ -121,7 +120,7 @@ for (i in 5:(length(d)-1)){
 ####################################
 
 # Replace variable names with abbreviations from look-up table (LUT)
-lut <- read.delim("C:/Users/Marius/MNB QSync/Exchange/Marius/RStudio Projects/Tinkerbox/2019-01-31 2dim CanDisc GT and Trt collapsed/Abb_LUT.txt",stringsAsFactors = F)
+lut <- read.delim("%LOOKUPTABLEPATH%/Abb_LUT.txt",stringsAsFactors = F)
 
 for (i in 1 :(length(d)-1)){
   colnames(d)[colnames(d) == lut$Var[i]] <- lut$Lab[i]
