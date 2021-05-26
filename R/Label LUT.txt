@@ -1,0 +1,33 @@
+var	title	lab
+Alternations	Alternations (YM)	Spont. Alternation Rate [%]
+SpontaneousAlternations	Alternations (YM)	No. Spont. Alternations
+Choices	Choices (YM)	No. Choices
+Meanspeed	Mean Speed (OF)	Mean Speed [m/s]
+Timemobile	Time Mobile (OF)	Time Mobile [s]
+Rotations	Rotations (OF)	Rotation Rate [Rot./m]
+Corner	Corner (OF)	Time in Corners [%]
+Center	Center (OF)	Time in Center [%]
+Periphery	Periphery (OF)	Time in Periphery [%]
+ContextBase	FC Context Baseline	Time Freezing [%]
+Conditioning	FC Context Baseline	Time Freezing [%]
+FreezeBase	Freezing Baseline (FC)	Time Freezing [%]
+Context	Context (FC)	Time Freezing [%]
+Cue	Cue (FC)	Time Freezing [%]
+Base	FC Cue Baseline	Time Freezing [%]
+CueBase	FC Cue Baseline	Time Freezing [%]
+Timeimmobile	Time Immobile (TST)	Time Immobile [%]
+Immobileepisodes	Immobile Episodes (TST)	Immobile Episodes
+Baseline	PPI Baseline	Startle Response [AU]
+inhibition70	PPI 70dB	Inhibition [%]
+inhibition80	PPI 80dB	Inhibition [%]
+inhibition75	PPI 75dB	Inhibition [%]
+inhibition85	PPI 85dB	Inhibition [%]
+PPIscore	Mean PPI	Inhibition [%]
+SucPref	Sucrose Pref (IC)	Pref Score [AU]
+PlacePref	Place Learning (IC)	Pref Score [AU]
+ReversalLearn	First Reversal (IC)	Trials to Learning Criterion
+SerialLearn	Serial Reversal (IC)	AUC of Learning Curve [AU]
+Activity	Activity (IC)	Activity [Visits/h]
+Nocturnal	Nocturnality (IC)	Nocturnality Score [AU]
+PRR	Impulsivity (IC)	Premature Response Rate
+AchievedReversals	Serial Reversal SPRT (IC)	No. of Reversals Achieved
